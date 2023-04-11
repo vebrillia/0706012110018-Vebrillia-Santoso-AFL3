@@ -12,6 +12,7 @@
 		048EB18829E4EDA600131673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EB18729E4EDA600131673 /* Assets.xcassets */; };
 		048EB18B29E4EDA600131673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EB18A29E4EDA600131673 /* Preview Assets.xcassets */; };
 		048EB19329E4F6A000131673 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB19229E4F6A000131673 /* CircleImage.swift */; };
+		048EB19529E4F7F300131673 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB19429E4F7F300131673 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		048EB18A29E4EDA600131673 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		048EB18C29E4EDA600131673 /* _706012110018_Vebrillia_Santoso_AFL3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _706012110018_Vebrillia_Santoso_AFL3.entitlements; sourceTree = "<group>"; };
 		048EB19229E4F6A000131673 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		048EB19429E4F7F300131673 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				048EB18529E4EDA300131673 /* ContentView.swift */,
 				048EB18729E4EDA600131673 /* Assets.xcassets */,
 				048EB19229E4F6A000131673 /* CircleImage.swift */,
+				048EB19429E4F7F300131673 /* MapView.swift */,
 				048EB18C29E4EDA600131673 /* _706012110018_Vebrillia_Santoso_AFL3.entitlements */,
 				048EB18929E4EDA600131673 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048EB18629E4EDA300131673 /* ContentView.swift in Sources */,
+				048EB19529E4F7F300131673 /* MapView.swift in Sources */,
 				048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */,
 				048EB19329E4F6A000131673 /* CircleImage.swift in Sources */,
 			);
