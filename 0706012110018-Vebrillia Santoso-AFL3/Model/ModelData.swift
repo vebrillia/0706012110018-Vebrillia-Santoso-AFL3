@@ -6,6 +6,13 @@
 //
 
 import Foundation
+import Combine
+
+//Declare a new model type
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 //Create an array of landmarks that has been initialize from landmarkData.json
 var landmarks: [Landmark] = load("landmarkData.json")
