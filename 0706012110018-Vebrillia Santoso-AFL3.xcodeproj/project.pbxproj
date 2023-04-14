@@ -20,6 +20,7 @@
 		048EB1A529E8EF4E00131673 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB1A429E8EF4E00131673 /* LandmarkList.swift */; };
 		048EB1A729E8F18900131673 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB1A629E8F18900131673 /* LandmarkDetail.swift */; };
 		048EB1A929E8FE8B00131673 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB1A829E8FE8B00131673 /* FavoriteButton.swift */; };
+		048EB1AD29E9009800131673 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB1AC29E9009800131673 /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		048EB1A429E8EF4E00131673 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		048EB1A629E8F18900131673 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		048EB1A829E8FE8B00131673 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		048EB1AC29E9009800131673 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				048EB1AA29E8FEBD00131673 /* Helpers */,
 				048EB1AB29E8FF5400131673 /* Landmarks */,
 				048EB18529E4EDA300131673 /* ContentView.swift */,
+				048EB1AC29E9009800131673 /* HexagonParameters.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				048EB19529E4F7F300131673 /* MapView.swift in Sources */,
 				048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */,
 				048EB1A929E8FE8B00131673 /* FavoriteButton.swift in Sources */,
+				048EB1AD29E9009800131673 /* HexagonParameters.swift in Sources */,
 				048EB1A529E8EF4E00131673 /* LandmarkList.swift in Sources */,
 				048EB1A729E8F18900131673 /* LandmarkDetail.swift in Sources */,
 				048EB19329E4F6A000131673 /* CircleImage.swift in Sources */,
