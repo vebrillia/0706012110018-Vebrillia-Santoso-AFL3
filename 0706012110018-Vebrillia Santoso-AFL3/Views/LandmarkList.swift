@@ -9,10 +9,10 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        //Embed list for two landmaarks as the list's children
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+        //Pass the model data's landmarks array to the List initializer
+        List(landmarks){ landmark in
+            //returning a LandmarkRow from the closure
+            LandmarkRow(landmark: landmark)
         }
     }
 }
