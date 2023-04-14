@@ -8,9 +8,9 @@
 import SwiftUI
 
 @main
-struct LandmarksApp: App {
+struct _706012110018_Vebrillia_Santoso_AFL3App: App {
     @StateObject private var modelData = ModelData()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
