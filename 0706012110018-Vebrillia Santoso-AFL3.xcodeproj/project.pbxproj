@@ -16,6 +16,7 @@
 		048EB19729E8E69300131673 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 048EB19629E8E69300131673 /* landmarkData.json */; };
 		048EB19929E8E6B900131673 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB19829E8E6B900131673 /* Landmark.swift */; };
 		048EB19D29E8E9BF00131673 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB19C29E8E9BF00131673 /* ModelData.swift */; };
+		048EB1A329E8ECB000131673 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB1A229E8ECB000131673 /* LandmarkRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		048EB19629E8E69300131673 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		048EB19829E8E6B900131673 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		048EB19C29E8E9BF00131673 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		048EB1A229E8ECB000131673 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				048EB18529E4EDA300131673 /* ContentView.swift */,
 				048EB19229E4F6A000131673 /* CircleImage.swift */,
 				048EB19429E4F7F300131673 /* MapView.swift */,
+				048EB1A229E8ECB000131673 /* LandmarkRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */,
 				048EB19329E4F6A000131673 /* CircleImage.swift in Sources */,
 				048EB19929E8E6B900131673 /* Landmark.swift in Sources */,
+				048EB1A329E8ECB000131673 /* LandmarkRow.swift in Sources */,
 				048EB19D29E8E9BF00131673 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +323,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -326,8 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vebrilliasantoso.-706012110018-Vebrillia-Santoso-AFL3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -346,6 +355,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -353,8 +363,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vebrilliasantoso.-706012110018-Vebrillia-Santoso-AFL3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
