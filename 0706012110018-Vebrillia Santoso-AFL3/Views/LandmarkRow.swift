@@ -30,6 +30,12 @@ struct LandmarkRow: View {
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         //Add the landmark parameter to te LandmarkRow initializer
-        LandmarkRow(landmark: landmarks[0])
+        Group {
+            LandmarkRow(landmark: landmarks[0])
+            LandmarkRow(landmark: landmarks[1])
+               
+        }
+            //Set size
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }
