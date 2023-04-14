@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandmarkList: View {
     //Set show favorites
-    @State private var showFavoritesOnly = true
+    @State private var showFavoritesOnly = false
     
     //Compute a filtered version of the landmarks list
     var filteredLandmarks: [Landmark] {
@@ -22,16 +22,22 @@ struct LandmarkList: View {
         //Embed the dynamically generated list of landmarks
         NavigationView{
             //Pass the model data's landmarks array to the List initializer
-            List(filteredLandmarks){ landmark in
-                //Wrap the returned row 
-                NavigationLink{
-                    //Pass the current landmark to the destination Landmark Detail
-                    LandmarkDetail(landmark: landmark)
-                }label: {
-                    //returning a LandmarkRow from the closure
-                    LandmarkRow(landmark: landmark)
+            List {
+                //Add toggle view
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
                 }
                 
+                ForEach(filteredLandmarks) { landmark in
+                    //Wrap the returned row
+                    NavigationLink{
+                        //Pass the current landmark to the destination Landmark Detail
+                        LandmarkDetail(landmark: landmark)
+                    }label: {
+                        //returning a LandmarkRow from the closure
+                        LandmarkRow(landmark: landmark)
+                    }
+                }
             }
             //Call the navigation Title
             .navigationTitle("Landmarks")
