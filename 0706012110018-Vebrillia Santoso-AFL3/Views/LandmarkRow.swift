@@ -34,6 +34,8 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         //Add the landmark parameter to te LandmarkRow initializer
         Group {
