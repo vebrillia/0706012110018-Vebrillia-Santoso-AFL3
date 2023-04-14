@@ -15,7 +15,8 @@ struct LandmarkList: View {
             List(landmarks){ landmark in
                 //Wrap the returned row 
                 NavigationLink{
-                    LandmarkDetail()
+                    //Pass the current landmark to the destination Landmark Detail
+                    LandmarkDetail(landmark: landmark)
                 }label: {
                     //returning a LandmarkRow from the closure
                     LandmarkRow(landmark: landmark)
