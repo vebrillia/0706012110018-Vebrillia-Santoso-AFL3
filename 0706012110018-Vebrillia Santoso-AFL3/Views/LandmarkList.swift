@@ -9,10 +9,21 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        //Pass the model data's landmarks array to the List initializer
-        List(landmarks){ landmark in
-            //returning a LandmarkRow from the closure
-            LandmarkRow(landmark: landmark)
+        //Embed the dynamically generated list of landmarks
+        NavigationView{
+            //Pass the model data's landmarks array to the List initializer
+            List(landmarks){ landmark in
+                //Wrap the returned row 
+                NavigationLink{
+                    LandmarkDetail()
+                }label: {
+                    //returning a LandmarkRow from the closure
+                    LandmarkRow(landmark: landmark)
+                }
+                
+            }
+            //Call the navigation Title
+            .navigationTitle("Landmarks")
         }
     }
 }
