@@ -32,7 +32,10 @@ struct HikeView: View {
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
+                        // making the button larger when the graph is visible
+                        .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
+                                        
                 }
             }
 
