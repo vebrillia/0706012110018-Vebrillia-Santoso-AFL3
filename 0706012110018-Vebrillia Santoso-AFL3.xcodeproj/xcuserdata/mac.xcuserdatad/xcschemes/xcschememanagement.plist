@@ -7,6 +7,11 @@
 		<key>0706012110018-Vebrillia Santoso-AFL3.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MacLandmarks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
