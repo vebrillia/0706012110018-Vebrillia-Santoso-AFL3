@@ -13,6 +13,8 @@ struct LandmarkList: View {
     @State private var showFavoritesOnly = false
     //add a filter state variable, defaulting to the all case
     @State private var filter = FilterCategory.all
+    //state variable for the selected landmark
+    @State private var selectedLandmark: Landmark?
     
     //to describe filter state
     enum FilterCategory: String, CaseIterable, Identifiable {
@@ -38,12 +40,17 @@ struct LandmarkList: View {
            let title = filter == .all ? "Landmarks" : filter.rawValue
            return showFavoritesOnly ? "Favorite \(title)" : title
        }
+    //computed property that indicates the index of the selected landmark
+    var index: Int? {
+            modelData.landmarks.firstIndex(where: { $0.id == selectedLandmark?.id })
+        }
+
 
     var body: some View {
         //Embed the dynamically generated list of landmarks
         NavigationView{
-            //Pass the model data's landmarks array to the List initializer
-            List {
+            //initialize the list with a binding to the selected value
+            List(selection: $selectedLandmark) {
 
                 ForEach(filteredLandmarks) { landmark in
                     //Wrap the returned row
@@ -54,6 +61,8 @@ struct LandmarkList: View {
                         //returning a LandmarkRow from the closure
                         LandmarkRow(landmark: landmark)
                     }
+                    //add tag to the navigation link
+                    .tag(landmark)
                 }
             }
             //Call the navigation Title
@@ -82,6 +91,10 @@ struct LandmarkList: View {
             //placeholder for the secondview in wide layout
             Text("Select a Landmark")
         }
+        //providing a binding the value from the landmarks array
+        .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
+    }
+}
         
 //        //using navigation stack
 //        NavigationStack{
@@ -95,8 +108,7 @@ struct LandmarkList: View {
 //
 //            }
 //        }
-    }
-}
+    
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
