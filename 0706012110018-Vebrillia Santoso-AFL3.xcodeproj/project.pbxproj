@@ -27,6 +27,7 @@
 		040D74DA29FA79D50043B508 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74D929FA79D50043B508 /* PageViewController.swift */; };
 		040D74DC29FA7EDE0043B508 /* FeaturedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74DB29FA7EDE0043B508 /* FeaturedCard.swift */; };
 		040D74DE29FA80260043B508 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74DD29FA80260043B508 /* PageView.swift */; };
+		040D74E029FA860E0043B508 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74DF29FA860E0043B508 /* PageControl.swift */; };
 		048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */; };
 		048EB18629E4EDA300131673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18529E4EDA300131673 /* ContentView.swift */; };
 		048EB18829E4EDA600131673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EB18729E4EDA600131673 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		040D74D929FA79D50043B508 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		040D74DB29FA7EDE0043B508 /* FeaturedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCard.swift; sourceTree = "<group>"; };
 		040D74DD29FA80260043B508 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		040D74DF29FA860E0043B508 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		048EB18029E4EDA300131673 /* 0706012110018-Vebrillia Santoso-AFL3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0706012110018-Vebrillia Santoso-AFL3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _706012110018_Vebrillia_Santoso_AFL3App.swift; sourceTree = "<group>"; };
 		048EB18529E4EDA300131673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				040D74D929FA79D50043B508 /* PageViewController.swift */,
 				040D74DB29FA7EDE0043B508 /* FeaturedCard.swift */,
 				040D74DD29FA80260043B508 /* PageView.swift */,
+				040D74DF29FA860E0043B508 /* PageControl.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				040D74DE29FA80260043B508 /* PageView.swift in Sources */,
 				040D74AF29F991F40043B508 /* BadgeSymbol.swift in Sources */,
 				040D74D529FA6D170043B508 /* ProfileEditor.swift in Sources */,
+				040D74E029FA860E0043B508 /* PageControl.swift in Sources */,
 				048EB1A529E8EF4E00131673 /* LandmarkList.swift in Sources */,
 				040D74C329F99E920043B508 /* HikeView.swift in Sources */,
 				048EB1A729E8F18900131673 /* LandmarkDetail.swift in Sources */,

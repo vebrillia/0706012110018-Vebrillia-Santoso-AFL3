@@ -17,10 +17,8 @@ struct CategoryHome: View {
             // display categories using a List
             List {
                 //add image of the first featured landmaaark to the top of the list
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .clipped()
                     .listRowInsets(EdgeInsets())
 
