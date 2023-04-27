@@ -34,6 +34,11 @@ struct Landmark: Hashable, Codable, Identifiable {
         Image(imageName)
     }
     
+    // add a computed property to the Landmartk structure that returns the feature image
+    var featureImage: Image? {
+            isFeatured ? Image(imageName + "_feature") : nil
+        }
+    
     //Add a coordinates property to the structure using a nested
     private var coordinates: Coordinates
     
