@@ -27,7 +27,7 @@ struct ProfileHost: View {
                     // read the user's profile data from environtment
                     ProfileSummary(profile: modelData.profile)
                 }else{
-                    Text("Profile Editor")
+                    ProfileEditor(profile: $draftProfile)
                 }
             }
             .padding()

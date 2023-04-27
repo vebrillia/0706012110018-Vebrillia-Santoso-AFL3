@@ -23,6 +23,7 @@
 		040D74CF29FA5C9C0043B508 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74CE29FA5C9C0043B508 /* ProfileHost.swift */; };
 		040D74D129FA5CFF0043B508 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74D029FA5CFF0043B508 /* ProfileSummary.swift */; };
 		040D74D329FA5D7D0043B508 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74D229FA5D7D0043B508 /* HikeBadge.swift */; };
+		040D74D529FA6D170043B508 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D74D429FA6D170043B508 /* ProfileEditor.swift */; };
 		048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */; };
 		048EB18629E4EDA300131673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18529E4EDA300131673 /* ContentView.swift */; };
 		048EB18829E4EDA600131673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EB18729E4EDA600131673 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		040D74CE29FA5C9C0043B508 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		040D74D029FA5CFF0043B508 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		040D74D229FA5D7D0043B508 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		040D74D429FA6D170043B508 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		048EB18029E4EDA300131673 /* 0706012110018-Vebrillia Santoso-AFL3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0706012110018-Vebrillia Santoso-AFL3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _706012110018_Vebrillia_Santoso_AFL3App.swift; sourceTree = "<group>"; };
 		048EB18529E4EDA300131673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				040D74CE29FA5C9C0043B508 /* ProfileHost.swift */,
 				040D74D029FA5CFF0043B508 /* ProfileSummary.swift */,
+				040D74D429FA6D170043B508 /* ProfileEditor.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				040D74BA29F99E000043B508 /* Hike.swift in Sources */,
 				040D74B329F994020043B508 /* RotatedBadgeSymbol.swift in Sources */,
 				040D74AF29F991F40043B508 /* BadgeSymbol.swift in Sources */,
+				040D74D529FA6D170043B508 /* ProfileEditor.swift in Sources */,
 				048EB1A529E8EF4E00131673 /* LandmarkList.swift in Sources */,
 				040D74C329F99E920043B508 /* HikeView.swift in Sources */,
 				048EB1A729E8F18900131673 /* LandmarkDetail.swift in Sources */,
