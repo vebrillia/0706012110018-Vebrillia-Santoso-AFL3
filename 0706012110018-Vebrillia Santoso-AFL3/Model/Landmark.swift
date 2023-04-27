@@ -18,6 +18,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var description: String
     var isFavorite: Bool
+    var isFeatured: Bool
     
     //Add a category enumeration and a category property to the Landmark structure
     var category: Category

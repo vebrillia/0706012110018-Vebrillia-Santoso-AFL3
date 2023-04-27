@@ -14,6 +14,11 @@ final class ModelData: ObservableObject {
     //load the hikes array
     var hikes: [Hike] = load("hikeData.json")
     
+    //add new computed features array
+    var features: [Landmark] {
+            landmarks.filter { $0.isFeatured }
+        }
+
     //Add a computed categories dictionary
     var categories: [String: [Landmark]] {
             Dictionary(
