@@ -47,6 +47,7 @@
 		040D750229FAB6E20043B508 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D750129FAB6E20043B508 /* LandmarkDetail.swift */; };
 		040D750429FAC8440043B508 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D750329FAC8440043B508 /* LandmarkCommands.swift */; };
 		040D750529FAC8440043B508 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D750329FAC8440043B508 /* LandmarkCommands.swift */; };
+		040D750729FAD0250043B508 /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D750629FAD0250043B508 /* LandmarkSettings.swift */; };
 		048EB18429E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */; };
 		048EB18629E4EDA300131673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EB18529E4EDA300131673 /* ContentView.swift */; };
 		048EB18829E4EDA600131673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EB18729E4EDA600131673 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		040D74F029FAA5250043B508 /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
 		040D750129FAB6E20043B508 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		040D750329FAC8440043B508 /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		040D750629FAD0250043B508 /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 		048EB18029E4EDA300131673 /* 0706012110018-Vebrillia Santoso-AFL3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0706012110018-Vebrillia Santoso-AFL3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048EB18329E4EDA300131673 /* _706012110018_Vebrillia_Santoso_AFL3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _706012110018_Vebrillia_Santoso_AFL3App.swift; sourceTree = "<group>"; };
 		048EB18529E4EDA300131673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				040D74ED29FAA5250043B508 /* Preview Content */,
 				040D750129FAB6E20043B508 /* LandmarkDetail.swift */,
 				040D750329FAC8440043B508 /* LandmarkCommands.swift */,
+				040D750629FAD0250043B508 /* LandmarkSettings.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				040D74EA29FAA5220043B508 /* ContentView.swift in Sources */,
 				040D74FA29FAB3E60043B508 /* Profile.swift in Sources */,
+				040D750729FAD0250043B508 /* LandmarkSettings.swift in Sources */,
 				040D74F929FAB3E60043B508 /* CircleImage.swift in Sources */,
 				040D74FE29FAB3E60043B508 /* FavoriteButton.swift in Sources */,
 				040D750529FAC8440043B508 /* LandmarkCommands.swift in Sources */,

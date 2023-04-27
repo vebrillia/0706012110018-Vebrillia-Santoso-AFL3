@@ -20,5 +20,12 @@ struct _706012110018_Vebrillia_Santoso_AFL3App: App {
         .commands{
             LandmarkCommands()
         }
+        
+        //add settings scene to macOS
+        #if os(macOS)
+                Settings {
+                    LandmarkSettings()
+                }
+        #endif
     }
 }
