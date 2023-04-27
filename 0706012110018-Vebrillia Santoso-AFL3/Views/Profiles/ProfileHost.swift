@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct ProfileHost: View {
+    // add an environtment view property
+    @Environment(\.editMode) var editMode
+    
+    @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
 
         var body: some View {
             // display new summary view
             VStack(alignment: .leading, spacing: 20) {
-                ProfileSummary(profile: draftProfile)
+                // edit button 
+                HStack {
+                    Spacer()
+                    EditButton()
+                }
+                // conditional view
+                if editMode?.wrappedValue == .inactive{
+                    // read the user's profile data from environtment
+                    ProfileSummary(profile: modelData.profile)
+                }else{
+                    Text("Profile Editor")
+                }
             }
             .padding()
         }
@@ -22,5 +37,6 @@ struct ProfileHost: View {
     struct ProfileHost_Previews: PreviewProvider {
         static var previews: some View {
             ProfileHost()
+                .environmentObject(ModelData())
         }
     }

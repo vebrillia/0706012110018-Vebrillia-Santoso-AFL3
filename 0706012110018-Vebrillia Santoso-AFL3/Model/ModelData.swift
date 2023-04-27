@@ -14,6 +14,8 @@ final class ModelData: ObservableObject {
     //load the hikes array
     var hikes: [Hike] = load("hikeData.json")
     
+    @Published var profile = Profile.default
+    
     //add new computed features array
     var features: [Landmark] {
             landmarks.filter { $0.isFeatured }
