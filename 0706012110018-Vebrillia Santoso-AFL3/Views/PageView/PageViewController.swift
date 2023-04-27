@@ -10,6 +10,7 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
+    @Binding var currentPage: Int
     
     //another method to make the coordinator
     func makeCoordinator() -> Coordinator {
@@ -23,6 +24,8 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             navigationOrientation: .horizontal)
         //add the coordinator as the data source
         pageViewController.dataSource = context.coordinator
+        //assign the coordinator as the delegate
+        pageViewController.delegate = context.coordinator
 
         return pageViewController
     }
@@ -31,10 +34,10 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             //initialize array
-            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: PageViewController
         var controllers = [UIViewController]()
         
