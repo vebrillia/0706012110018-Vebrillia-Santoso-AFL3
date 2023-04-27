@@ -19,6 +19,14 @@ struct Landmark: Hashable, Codable, Identifiable {
     var description: String
     var isFavorite: Bool
     
+    //Add a category enumeration and a category property to the Landmark structure
+    var category: Category
+        enum Category: String, CaseIterable, Codable {
+            case lakes = "Lakes"
+            case rivers = "Rivers"
+            case mountains = "Mountains"
+        }
+    
     //Add imageName property to read the name of the image from data
     private var imageName: String
     var image: Image {

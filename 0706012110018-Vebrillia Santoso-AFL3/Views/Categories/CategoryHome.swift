@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    @EnvironmentObject var modelData: ModelData
+
     var body: some View {
         // to host the different categories
         NavigationView{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                // set navigation title
-                .navigationTitle("Featured")
+            // display categories using a List
+            List {
+                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+                    Text(key)
+                }
+            }
+            .navigationTitle("Featured")
+
         }
     }
 }
@@ -21,5 +28,6 @@ struct CategoryHome: View {
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
+            .environmentObject(ModelData())
     }
 }
