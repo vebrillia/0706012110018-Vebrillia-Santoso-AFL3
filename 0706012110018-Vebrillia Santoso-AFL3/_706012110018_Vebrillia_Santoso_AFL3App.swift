@@ -16,5 +16,9 @@ struct _706012110018_Vebrillia_Santoso_AFL3App: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        //apply landmarkcommands
+        .commands{
+            LandmarkCommands()
+        }
     }
 }
