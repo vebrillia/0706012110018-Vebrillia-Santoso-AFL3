@@ -21,40 +21,42 @@ struct LandmarkList: View {
     
     var body: some View {
         //Embed the dynamically generated list of landmarks
-//        NavigationView{
-//            //Pass the model data's landmarks array to the List initializer
-//            List {
-//                //Add toggle view
-//                Toggle(isOn: $showFavoritesOnly) {
-//                    Text("Favorites only")
+        NavigationView{
+            //Pass the model data's landmarks array to the List initializer
+            List {
+                //Add toggle view
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+
+                ForEach(filteredLandmarks) { landmark in
+                    //Wrap the returned row
+                    NavigationLink{
+                        //Pass the current landmark to the destination Landmark Detail
+                        LandmarkDetail(landmark: landmark)
+                    }label: {
+                        //returning a LandmarkRow from the closure
+                        LandmarkRow(landmark: landmark)
+                    }
+                }
+            }
+            //Call the navigation Title
+            .navigationTitle("Landmarks")
+            .frame(minWidth: 300)
+        }
+        
+//        //using navigation stack
+//        NavigationStack{
+//            List(landmarks){ landmark in
+//                NavigationLink{
+//                    LandmarkDetail(landmark: landmark)
+//
+//                }label: {
+//                    LandmarkRow(landmark: landmark)
 //                }
 //
-//                ForEach(filteredLandmarks) { landmark in
-//                    //Wrap the returned row
-//                    NavigationLink{
-//                        //Pass the current landmark to the destination Landmark Detail
-//                        LandmarkDetail(landmark: landmark)
-//                    }label: {
-//                        //returning a LandmarkRow from the closure
-//                        LandmarkRow(landmark: landmark)
-//                    }
-//                }
 //            }
-//            //Call the navigation Title
-//            .navigationTitle("Landmarks")
 //        }
-        //using navigation stack
-        NavigationStack{
-            List(landmarks){ landmark in
-                NavigationLink{
-                    LandmarkDetail(landmark: landmark)
-                    
-                }label: {
-                    LandmarkRow(landmark: landmark)
-                }
-                
-            }
-        }
     }
 }
 

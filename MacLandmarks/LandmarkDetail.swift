@@ -18,24 +18,24 @@ struct LandmarkDetail: View {
 
     var body: some View {
         ScrollView {
-                   ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
-                       MapView(coordinate: landmark.locationCoordinate)
-                           .ignoresSafeArea(edges: .top)
-                           .frame(height: 300)
+            ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+                MapView(coordinate: landmark.locationCoordinate)
+                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 300)
 
-                       Button("Open in Maps") {
-                           let destination = MKMapItem(placemark: MKPlacemark(coordinate: landmark.locationCoordinate))
-                           destination.name = landmark.name
-                           destination.openInMaps()
-                       }
-                       .padding()
-                   }
+                Button("Open in Maps") {
+                    let destination = MKMapItem(placemark: MKPlacemark(coordinate: landmark.locationCoordinate))
+                    destination.name = landmark.name
+                    destination.openInMaps()
+                }
+                .padding()
+            }
 
             VStack(alignment: .leading, spacing: 20) {
                 HStack(spacing: 24) {
                     CircleImage(image: landmark.image.resizable())
                         .frame(width: 160, height: 160)
-                    
+
                     VStack(alignment: .leading) {
                         HStack {
                             Text(landmark.name)
@@ -43,17 +43,16 @@ struct LandmarkDetail: View {
                             FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                                 .buttonStyle(.plain)
                         }
-                        
+
                         VStack(alignment: .leading) {
                             Text(landmark.park)
-                            Spacer()
                             Text(landmark.state)
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     }
-                    
                 }
+
                 Divider()
 
                 Text("About \(landmark.name)")
@@ -61,9 +60,7 @@ struct LandmarkDetail: View {
                 Text(landmark.description)
             }
             .padding()
-            //constrain the scrollview to max width
             .frame(maxWidth: 700)
-            //apply small offset to the entire VStack
             .offset(y: -50)
         }
         .navigationTitle(landmark.name)

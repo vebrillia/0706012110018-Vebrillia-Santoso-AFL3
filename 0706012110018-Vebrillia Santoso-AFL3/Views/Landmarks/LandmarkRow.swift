@@ -18,10 +18,16 @@ struct LandmarkRow: View {
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
-            
-            //Modify the text view to use the landmark property's name
-            Text(landmark.name)
-            
+                .cornerRadius(5)
+            VStack(alignment: .leading) {
+                
+                //Modify the text view to use the landmark property's name
+                Text(landmark.name)
+                    .bold()
+                Text(landmark.park)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
             Spacer()
             
             //Add if for favorite
@@ -30,6 +36,7 @@ struct LandmarkRow: View {
                     .foregroundColor(.yellow)
             }
         }
+        .padding(.vertical,4)
     }
 }
 
